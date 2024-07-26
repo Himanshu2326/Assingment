@@ -1,0 +1,900 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+
+}
+
+/* 
+============================
+? => Repeatable Css :--
+============================
+*/
+
+.D-Flex-Center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Px-7 {
+    padding: 0 7rem;
+}
+
+
+/* 
+============================
+? => Navbar Css :--
+============================
+*/
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f2efea;
+    padding: 1.5rem 7rem;
+    z-index: 10;
+}
+
+.logo img {
+    height: 3.5rem;
+}
+
+.links ul li {
+    list-style: none;
+}
+
+.links ul li a {
+    text-decoration: none;
+    padding: 0 15px;
+    color: #626262;
+    font-size: 1.03rem;
+    transition: 0.2s;
+}
+
+.links ul li a:hover {
+    color: orange;
+}
+
+.WhatsAppBtn {
+    padding: 12px 35px;
+    font-size: 1.07rem;
+    background: white;
+    border: none;
+    color: orange;
+    border-radius: 25px;
+    margin-left: 2rem;
+    transition: 0.2s;
+
+}
+
+.WhatsAppBtn:hover {
+    background: linear-gradient(to right, #fcae36 0, #ff9100 100%);
+    color: white;
+    transition: 0.2s;
+}
+
+
+/* 
+============================
+? => Main Container Css :--
+============================
+*/
+
+
+.Main-Container {
+    padding-top: 5rem;
+    background: #f3f3f3;
+}
+
+
+/* 
+============================
+? => First Section Css :--
+============================
+*/
+
+
+.First_Section {
+    background: #f2efea;
+    position: relative;
+    z-index: 5;
+}
+
+.First_Section_Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.LeftTextArea {
+    padding: 2.3rem 0;
+}
+
+.LeftTextArea h1 {
+    font-size: 2.9rem;
+    color: #fd9f1a;
+    width: 70%;
+}
+
+.LeftTextArea h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #5d5d5d;
+    margin: 2px 0;
+}
+
+.Top_Button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+
+.LeftTextArea button {
+    background: linear-gradient(to right, #fcae36 0, #ff9100 100%);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 20px 30px;
+    border-radius: 3px;
+    margin-top: 35px;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    transition: .3s all ease-in-out;
+}
+
+.LeftTextArea button:hover {
+    background: linear-gradient(to right, #d27e00 0, #b76700 100%);
+    cursor: pointer;
+}
+
+.LeftTextArea button span {
+    margin: 0 1rem;
+}
+
+
+.LeftTextArea .Top_Button p {
+    font-size: 0.80rem;
+    font-weight: 400;
+    color: gray;
+    margin-top: 3px;
+}
+
+
+.RightVideoArea video {
+    border-radius: 30px;
+}
+
+
+/*! ======================================== */
+
+.Move-Section {
+    padding: 0 7rem;
+    width: 75%;
+    padding-bottom: 2rem;
+}
+
+/** ======================================== */
+
+
+
+/* 
+============================
+? => Second Section Css :--
+============================
+*/
+
+
+.Second_Section {
+    margin: 3rem 0;
+}
+
+.Mini_Cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.Card {
+    flex-direction: column;
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+}
+
+.Card img {
+    height: 50px;
+}
+
+.Card h4 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.Card h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fcae36;
+}
+
+
+
+/* 
+============================
+? => Third Section Css :--
+============================
+*/
+
+
+.Third_Section {
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+
+}
+
+.Third_Section .heading h2 {
+    font-size: 2.4rem;
+    color: #b79d74;
+    margin-bottom: 2rem;
+}
+
+.ChooseCard {
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 12px 1px #f2f2f2;
+    border-radius: 10px;
+    gap: 1.8rem;
+}
+
+
+.ChooseCard_Text h3 {
+    color: #586a92;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.ChooseCard_Text h4 {
+    color: #818184;
+    font-weight: 400;
+
+}
+
+
+
+
+/* 
+============================
+? => Fourth Section Css :--
+============================
+*/
+
+.Forth_Section {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+
+}
+
+.Forth_Section .heading h2 {
+    font-size: 2.4rem;
+    color: #b79d74;
+    margin-bottom: 2rem;
+}
+
+.Benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.BenefitCard {
+    flex-direction: column;
+    color: #586a92;
+    transition: 0.2s ease-in-out;
+}
+
+.BenefitCard:hover {
+    scale: 1.08;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* 
+============================
+? => Fifth Section Css :--
+============================
+*/
+
+
+.Fifth_Section {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.Fifth_Section .heading {
+    flex-direction: column;
+}
+
+.Fifth_Section .heading h2 {
+    font-size: 2.4rem;
+    color: #b79d74;
+    margin-bottom: 2rem;
+}
+
+.Curriculum_Buttons button {
+    font-size: 1.3rem;
+    color: #586a92;
+    border: none;
+    background: none;
+    padding: 0 10px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.Curriculum_Buttons .active {
+    color: #b79d74;
+    text-underline-offset: 7px;
+    text-decoration: underline;
+}
+
+
+.Curriculum_Card {
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.Day,
+.Curriculum {
+    background: #f8f8f8;
+}
+
+.Day h3 {
+    color: #b79d74;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.Day h4 {
+    color: #626262;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.Day {
+    flex-direction: column;
+    padding: 3.2rem 3.5rem;
+    min-width: 12rem;
+    border-radius: 20px;
+}
+
+
+.Curriculum {
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+}
+
+.Curriculum h4 {
+    color: #636363;
+    margin: 5px 0;
+}
+
+.Curriculum h5 {
+    color: #5c5c5c;
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+
+
+
+/* 
+============================
+? => Sixth Section Css :--
+============================
+*/
+
+.Sixth_Section {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.Sixth_Section .heading {
+    flex-direction: column;
+}
+
+.Sixth_Section .heading h2 {
+    font-size: 2.4rem;
+    color: #b79d74;
+    margin-bottom: 2rem;
+}
+
+.TeachersCards {
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.TeacherCard {
+    text-align: center;
+}
+
+.TeacherCard p {
+    color: #474747;
+}
+
+.TeacherCard img {
+    border-radius: 10px;
+}
+
+.TeacherCard h2 {
+    font-size: 1.8rem;
+    color: #b79d74;
+    margin: 1.2rem 0;
+    font-weight: 600;
+}
+
+
+
+/* 
+============================
+? => Seventh Section Css :--
+============================
+*/
+
+.Seventh_Section {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.Seventh_Section .heading {
+    flex-direction: column;
+}
+
+.Seventh_Section .heading h2 {
+    font-size: 2.4rem;
+    color: #b79d74;
+    margin-bottom: 2rem;
+}
+
+.StudentsStories {
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.StudentCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(216, 216, 216);
+    width: 70%;
+    padding: 10px 20px;
+}
+
+.StudentCard p {
+    padding: 10px 66px;
+    font-size: 0.95rem;
+    color: #444444;
+}
+
+.StudentCard .top {
+    display: flex;
+    align-items: center;
+}
+
+.StudentCard .top h2 {
+    color: #586a92;
+    font-weight: 500;
+}
+
+.StudentCard .top img {
+    border-radius: 50%;
+    margin: 0 1rem;
+    height: 5rem;
+}
+
+.Seventh_Section .Numbers {
+    margin: 2rem 0;
+    gap: 1.5rem;
+}
+
+.Numbers button {
+    padding: 12px 17px;
+    background: #ebebeb;
+    border: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+/* 
+============================
+? => Eight Section Css :--
+============================
+*/
+
+.Eight_Section {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.Eight_Section .heading {
+    flex-direction: column;
+}
+
+.Eight_Section .heading h2 {
+    font-size: 2.4rem;
+    color: #b79d74;
+    margin-bottom: 2rem;
+}
+
+.Eight_Section .FAQ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 6px 0px rgb(239 239 239);
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    color: #586a92;
+}
+
+.Eight_Section .FAQ h3 {
+    font-weight: 400;
+}
+
+.Eight_Section .ImageContainer img {
+    border-radius: 10px;
+}
+
+.FAQ button {
+    border: none;
+    padding: 7px 3px;
+    border-radius: 50%;
+}
+
+.FAQ button span {
+    padding: 0px 7px;
+    background: #f2f2ff;
+    color: #4e4e4e;
+    cursor: pointer;
+}
+
+
+/* 
+============================
+? => Ninth Section Css :--
+============================
+*/
+
+.Ninth_Section {
+    background: #973751;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.Ninth_Section .heading {
+    flex-direction: column;
+}
+
+.Ninth_Section .heading h2 {
+    font-size: 2.4rem;
+    color: white;
+    margin-bottom: 0.2rem;
+}
+
+.Ninth_Section .heading h4 {
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.Form_Area input {
+    background: #973751;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 1.1rem;
+    outline: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+input::placeholder {
+    color: white;
+}
+
+
+.Form_Area .Bottom input {
+    width: 95%;
+
+}
+
+.Submit-Btn button {
+    color: #973751;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 20px 30px;
+    border-radius: 3px;
+    margin-top: 25px;
+    background: #fff;
+    border-radius: 50px;
+    width: 200px;
+    transition: 0.3s all ease-in-out;
+    border: none !important;
+    cursor: pointer;
+}
+
+.Submit-Btn button:hover {
+    background: #ac2449;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+
+
+
+/* 
+============================
+? => Tenth Section Css :--
+============================
+*/
+
+.Tenth_Section {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.Tenth_Section .heading {
+    flex-direction: column;
+}
+
+.Tenth_Section .heading h2 {
+    font-size: 2.4rem;
+    color: #b79d74;
+    margin-bottom: 2rem;
+}
+
+.Tenth_Section .ForCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.Tenth_Section .ForCards .For-Card img {
+    height: 50px;
+}
+
+.Tenth_Section .ForCards .For-Card h3 {
+    color: #586a92;
+    font-weight: 500;
+    margin: 0.7rem 0;
+}
+
+.Tenth_Section .ForCards .For-Card p {
+    color: #707070;
+    font-size: 15px;
+}
+
+
+
+
+
+
+/* 
+============================
+* => Fixed Section Css :--
+============================
+*/
+
+.Main-Fixed-Section {
+    background: white;
+    width: fit-content;
+    background: white;
+    width: fit-content;
+    position: fixed;
+    right: 6%;
+    bottom: 38%;
+    padding: 25px 25px;
+    border-radius: 20px;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+
+
+.Register-Btn {
+    background: linear-gradient(to right, #fcae36 0, #ff9100 100%);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 13px 30px;
+    border-radius: 3px;
+    color: #fff;
+    margin: 1rem 0;
+    border-radius: 50px;
+    width: 100%;
+    border: none;
+    transition: .3s all ease-in-out;
+}
+
+
+.FixedContainer .Top h3 {
+    font-size: 1.4rem;
+    color: #fd9f1a;
+    margin-bottom: 5px;
+}
+
+.FixedContainer .Top h5 {
+    color: #617298;
+    font-weight: 400;
+    margin: 2px 0;
+}
+
+.FixedContainer .End h5 {
+    color: #1a1a1b;
+    font-weight: 400;
+    margin: 1px 0;
+}
+
+.FixedContainer .Top span,
+.FixedContainer .End span {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+
+.FixedContainer .End span {
+    color: rgb(255, 146, 14);
+}
+
+
+
+
+
+
+
+
+/* 
+============================
+? => Footer Section Css :--
+============================
+*/
+
+.Footer {
+    position: relative;
+    z-index: 5;
+}
+
+footer .Upper_Footer {
+    display: flex;
+    background: #ebebeb;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+}
+
+.Upper_Footer .Left img {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.Upper_Footer .Left p {
+    font-size: 0.85rem;
+    width: 75%;
+    color: #414141;
+}
+
+.Upper_Footer .Center h2 {
+    font-weight: 400;
+}
+
+.Upper_Footer .Center .address h4,
+.Upper_Footer .Center .Phone .phone h4,
+.Upper_Footer .Email .email h4 {
+    font-weight: 400;
+}
+
+.Upper_Footer .Center .address p {
+    font-size: 0.8rem;
+    color: #414141;
+}
+
+
+.Upper_Footer .Center .Phone .phone p,
+.Upper_Footer .Email .email p {
+    color: rgb(74, 74, 213);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+.Upper_Footer .Center .icon {
+    padding-right: 20px;
+}
+
+.Upper_Footer .Center .icon i {
+    color: black;
+    font-size: 2rem;
+    margin: 4px 10px;
+}
+
+.Upper_Footer .Center .Address,
+.Upper_Footer .Center .Email,
+.Upper_Footer .Center .Phone {
+    display: flex;
+    align-items: center;
+    margin: 12px 0px;
+}
+
+.Upper_Footer .Right {
+    margin-left: 5rem;
+}
+
+
+.Upper_Footer .Right h2 {
+    font-weight: 500;
+}
+
+.Upper_Footer .Right .Input {
+    display: flex;
+    flex-direction: column;
+}
+
+.Upper_Footer .Right .Input input {
+    padding: 0.8rem 1rem;
+    width: 25rem;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.Upper_Footer .Right .Input input::placeholder {
+    color: rgb(92, 92, 92);
+}
+
+
+.Upper_Footer .Right .Input button {
+    padding: 10px;
+    background-color: #A67B5B;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.Down-Footer p {
+    padding: 1.3rem 9rem;
+    font-size: 0.9rem;
+}
