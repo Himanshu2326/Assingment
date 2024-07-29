@@ -339,6 +339,12 @@ body {
     margin-bottom: 2rem;
 }
 
+.Curriculum_Cards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .Curriculum_Buttons button {
     font-size: 1.3rem;
     color: #586a92;
@@ -436,6 +442,9 @@ body {
 
 .TeacherCard {
     text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .TeacherCard p {
@@ -452,6 +461,26 @@ body {
     margin: 1.2rem 0;
     font-weight: 600;
 }
+
+
+.Show_More_Btn,
+.Show_Less_Btn {
+    display: block;
+    border: none;
+    background: none;
+    color: #35b3ff;
+    font-size: 0.97rem;
+    font-family: "Nunito", sans-serif;
+    margin-top: 10px;
+}
+
+.Show_More_Btn:hover,
+.Show_Less_Btn:hover {
+    color: #60c2ff;
+    transition: .2s;
+    cursor: pointer;
+}
+
 
 
 
@@ -489,9 +518,15 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 1px solid rgb(216, 216, 216);
+    border: 1px solid rgb(222, 222, 222);
     width: 70%;
     padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.StudentCard .Text {
+    display: flex;
+    flex-direction: column;
 }
 
 .StudentCard p {
@@ -529,9 +564,31 @@ body {
     font-size: 1.05rem;
     color: gray;
     cursor: pointer;
+    border-radius: 5px;
 }
 
+.Numbers .active {
+    background: #b98e71;
+    color: white;
+}
 
+.Student_Read_More_Btn {
+    display: block;
+    border: none;
+    background: none;
+    color: #b79d75;
+    text-decoration: underline;
+    font-size: 0.97rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+
+.Student_Read_More_Btn:hover {
+    transition: .2s;
+    text-decoration: none;
+    cursor: pointer;
+
+}
 
 /* 
 ============================
@@ -565,6 +622,7 @@ body {
     border-radius: 10px;
     margin: 1.5rem 0;
     color: #586a92;
+    transition: 0.3s ease-in-out;
 }
 
 .Eight_Section .FAQ h3 {
@@ -575,16 +633,54 @@ body {
     border-radius: 10px;
 }
 
+.FAQ {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+
+.FAQ .head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.FAQ_Div {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    transition: .3s ease-in-out;
+}
+
+
 .FAQ button {
     border: none;
     padding: 7px 3px;
     border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .FAQ button span {
     padding: 0px 7px;
     background: #f2f2ff;
     color: #4e4e4e;
+}
+
+
+.FAQ_Btn {
+    border: none;
+    background: none;
+    color: #b79d75;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+
+.FAQ_Btn:hover {
+    transition: .2s;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -798,7 +894,7 @@ input::placeholder {
 
 footer .Upper_Footer {
     display: flex;
-    background: #ebebeb;
+    background: #f2efea;
     padding: 2rem 3rem;
     justify-content: space-between;
 }
