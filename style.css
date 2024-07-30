@@ -84,6 +84,9 @@ body {
     transition: 0.2s;
 }
 
+.PhoneNo {
+    display: none;
+}
 
 /* 
 ============================
@@ -124,7 +127,7 @@ body {
 .LeftTextArea h1 {
     font-size: 2.9rem;
     color: #fd9f1a;
-    width: 70%;
+    width: 80%;
 }
 
 .LeftTextArea h4 {
@@ -177,6 +180,9 @@ body {
     border-radius: 30px;
 }
 
+.Phone-Video {
+    display: none;
+}
 
 /*! ======================================== */
 
@@ -301,6 +307,7 @@ body {
 .Benefits {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    place-items: center;
 }
 
 .BenefitCard {
@@ -339,7 +346,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.Curriculum_Cards{
+.Curriculum_Cards {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -453,6 +460,7 @@ body {
 
 .TeacherCard img {
     border-radius: 10px;
+    height: 17rem;
 }
 
 .TeacherCard h2 {
@@ -627,6 +635,11 @@ body {
 
 .Eight_Section .FAQ h3 {
     font-weight: 400;
+}
+
+.Eight_Section .ImageContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .Eight_Section .ImageContainer img {
@@ -993,4 +1006,533 @@ footer .Upper_Footer {
 .Down-Footer p {
     padding: 1.3rem 9rem;
     font-size: 0.9rem;
+}
+
+
+/* Responsive Code */
+
+@media (max-width:1450px) {
+
+    .ImageContainer img {
+        height: 25rem;
+    }
+}
+
+@media (max-width:1430px) {
+
+    .BenefitCard img {
+        height: 20rem;
+    }
+}
+
+
+@media (max-width:1350px) {
+
+    .LeftTextArea h1 {
+        font-size: 2.3rem;
+    }
+
+    .LeftTextArea h4 {
+        font-size: 1rem;
+    }
+
+    .LeftTextArea button {
+        font-size: 12px;
+        padding: 17px 20px;
+    }
+
+    .LeftTextArea .Top_Button p {
+        font-size: 0.60rem;
+    }
+
+    .RightVideoArea video {
+        width: 400px;
+        height: 225px;
+    }
+
+    .LeftTextArea h1 {
+        width: 79%;
+    }
+
+    .LeftTextArea h4 {
+        width: 75%;
+    }
+}
+
+
+@media (max-width:1280px) {
+
+    .TeacherCard img {
+        height: 14rem;
+    }
+
+    .TeacherCard h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:1230px) {
+
+    .BenefitCard img {
+        height: 16rem;
+    }
+
+    .Card {
+        padding: 10px 10px;
+    }
+
+    .Card h3 {
+        font-size: 0.8rem;
+    }
+
+    .Card img {
+        height: 35px;
+    }
+
+    .Card h4 {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:1130px) {
+    .Main-Fixed-Section {
+        display: none !important;
+    }
+
+    .Main-MoveAble-Section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Move-Section {
+        padding: 0 0rem;
+    }
+}
+
+
+@media (max-width:1080px) {
+
+    .LeftTextArea h1 {
+        font-size: 2rem;
+    }
+
+    .LeftTextArea h4 {
+        font-size: 0.9rem;
+    }
+
+    .LeftTextArea button {
+        font-size: 10px;
+        padding: 15px 18px;
+    }
+
+    .LeftTextArea .Top_Button p {
+        font-size: 0.55rem;
+    }
+
+    .RightVideoArea video {
+        width: 375px;
+        height: 215px;
+    }
+
+    .LeftTextArea h1 {
+        width: 79%;
+    }
+
+    .LeftTextArea h4 {
+        width: 75%;
+    }
+
+
+}
+
+
+@media (max-width:998px) {
+
+    .First_Section_Container {
+        flex-direction: column;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .LeftTextArea h1 {
+        width: 100%;
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .LeftTextArea {
+        padding: 2.3rem 0;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Upper_Footer .Right .Input input {
+        width: 16rem;
+    }
+
+    .PhoneNo {
+        display: block;
+        text-decoration: none;
+        background: orange;
+        padding: 7px 9px;
+        border-radius: 30px;
+    }
+    .PhoneNo a{
+        color: white;
+    }
+
+
+    .Mini_Cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ChooseCard img {
+        height: 7rem;
+    }
+
+    .ChooseCard_Text h3 {
+        font-size: 1rem;
+    }
+
+    .ChooseCard_Text h4 {
+        font-size: 0.9rem;
+    }
+
+    .Day {
+        padding: 2.2rem 2.5rem;
+        min-width: 9rem;
+    }
+
+    .Curriculum h5 {
+        font-size: 0.8rem;
+    }
+
+    .Curriculum_Card {
+        gap: 0.5rem;
+    }
+
+    .Fifth_Section {
+        padding: 3rem 1rem;
+    }
+
+    .Curriculum {
+        padding: 0.5rem 1rem;
+    }
+
+    .TeachersCards {
+        flex-direction: column;
+    }
+
+    .TeacherCard img {
+        height: 20rem;
+    }
+
+    .StudentCard p {
+        padding: 10px 5px;
+    }
+
+    .StudentCard {
+        width: 95%;
+    }
+
+    .ImageContainer img {
+        height: 17rem;
+    }
+
+    .Tenth_Section .ForCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .navbar {
+        background: #fff;
+        padding: 1.5rem 4rem;
+    }
+
+    footer .Upper_Footer {
+        flex-direction: column;
+        gap: 2rem 0;
+        align-items: flex-start;
+    }
+
+    .Upper_Footer .Right {
+        margin-left: 0rem;
+    }
+
+
+
+}
+
+@media (max-width:768px) {
+    .Desktop-Video {
+        display: none;
+    }
+
+    .Phone-Video {
+        display: block;
+    }
+
+    .Mini_Cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ChooseCard_Text h3 {
+        font-size: 0.9rem;
+    }
+
+    .ChooseCard_Text h4 {
+        font-size: 0.8rem;
+    }
+
+    .ChooseCard {
+        flex-direction: column;
+    }
+
+    .ChooseCard_Text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ChooseCard {
+        flex-direction: column;
+        padding: 12px 0;
+    }
+
+    .BenefitCard img {
+        height: 12rem;
+    }
+
+    .BenefitCard p {
+        font-size: 0.65rem;
+    }
+
+    .Form_Area .top,
+    .Form_Area .Middle {
+        flex-direction: column;
+    }
+
+    .Form_Area p {
+        text-align: center;
+    }
+
+    .Form_Area input {
+        min-width: 20rem;
+    }
+
+    .Bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Form_Area .Bottom input {
+        max-width: 20rem;
+    }
+
+    .Form_Area p input[type="checkbox"] {
+        min-width: 0rem;
+    }
+
+    .Seventh_Section .heading h2 {
+        text-align: center;
+    }
+
+    .Forth_Section .heading h2 {
+        text-align: center;
+    }
+
+    .Benefits {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Fifth_Section .heading h2 {
+        text-align: center;
+    }
+
+    .Sixth_Section .heading h2 {
+        text-align: center;
+    }
+
+    .navbar {
+        background: #fff;
+        padding: 1.5rem 3rem;
+    }
+
+    .LeftTextArea h1 {
+        width: 85%;
+    }
+
+    .RightVideoArea video {
+        width: 330px;
+        height: 230px;
+    }
+
+    .First_Section {
+        padding-bottom: 18px;
+    }
+    
+
+}
+
+
+@media (max-width:578px) {
+
+    .First_Section_Container {
+        padding: 0 0;
+    }
+
+    .navbar {
+        background: #fff;
+        padding: 1rem 1rem;
+    }
+
+    .logo img {
+        height: 3rem;
+    }
+
+    .ImageContainer img {
+        height: 12rem;
+    }
+
+    .LeftTextArea button {
+        margin-top: 10px;
+    }
+
+    .Third_Section .heading h2,
+    .Forth_Section .heading h2,
+    .Fifth_Section .heading h2,
+    .Sixth_Section .heading h2,
+    .Seventh_Section .heading h2,
+    .Ninth_Section .heading h2,
+    .Tenth_Section .heading h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .Curriculum_Buttons button {
+        font-size: 0.9rem;
+        padding: 0 3px;
+    }
+
+    .Curriculum_Card {
+        gap: 0.5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Seventh_Section {
+        background: white;
+        padding: 1rem 0.5rem;
+    }
+
+    .StudentCard .top img {
+        height: 4rem;
+    }
+
+    .StudentCard .top h2 {
+        font-size: 1rem;
+    }
+
+    .StudentCard p {
+        padding: 10px 5px;
+        font-size: 0.75rem;
+    }
+
+}
+
+
+@media (max-width:426px) {
+    .ImageContainer img {
+        height: 10rem;
+    }
+
+    .Eight_Section {
+        padding: 2rem 1rem;
+    }
+
+    .Eight_Section .FAQ h3 {
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+
+    .FAQ_Div p {
+        font-size: 0.75rem
+    }
+
+    .Ninth_Section {
+        padding: 1rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Ninth_Section .heading {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Ninth_Section .heading h4 {
+        font-weight: 400;
+        margin-bottom: 1rem;
+        font-size: 0.75rem;
+        width: 70%;
+    }
+
+    .Form_Area input {
+        min-width: 15rem;
+    }
+
+    .Submit-Btn button {
+        font-size: 13px;
+        padding: 15px 6px;
+        width: 140px;
+    }
+
+    .Upper_Footer .Left p {
+        font-size: 0.85rem;
+        width: 100%;
+    }
+
+    .Upper_Footer .Center .icon {
+        padding-right: 10px;
+    }
+
+    .Upper_Footer .Center .icon i {
+        font-size: 1.5rem;
+    }
+
+    .Down-Footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .Down-Footer p {
+        padding: 1.3rem 0rem;
+    }
+
+    .TeacherCard img {
+        height: 15rem;
+    }
+
+    .Curriculum_Buttons button {
+        font-size: 0.6rem;
+        padding: 0 3px;
+    }
+
+    .Third_Section .heading h2,
+    .Forth_Section .heading h2,
+    .Fifth_Section .heading h2,
+    .Sixth_Section .heading h2,
+    .Seventh_Section .heading h2,
+    .Ninth_Section .heading h2,
+    .Tenth_Section .heading h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }
